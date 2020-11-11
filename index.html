@@ -8,26 +8,12 @@
 <title>Redirection en htm</title
 <meta http-equiv="refresh" content="5; URL=https://intra.vnf.fr/">
 </head>
-    
-    
-<script>
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
-    xhr.setRequestHeader('Authorization', 'BotConnector ' + 'XkKD9VQ_z7A.AMt5CSaArzQ0_eyGeK5LsbAPCMsHhDxGofHm-yVkpoY');
-    xhr.send();
-    xhr.onreadystatechange = processRequest;
-
-    function processRequest(e) {
-      if (xhr.readyState == 4  && xhr.status == 200) {
-        var response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/<botname>?t="+response
-      }
-    }
-
-  </script>
-</html>
-
+          
+  <iframe src='https://webchat.botframework.com/embed/camil?s=XkKD9VQ_z7A.AMt5CSaArzQ0_eyGeK5LsbAPCMsHhDxGofHm-yVkpoY'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>        
+          
+     
+</tml>
 
 
 
